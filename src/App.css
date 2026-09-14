@@ -11,3 +11,21 @@
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
 }
+/* Tasks 48 & 49: Filter and search controls */
+.member-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.member-controls button,
+.member-controls input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.member-controls button {
+  cursor: pointer;
+}
