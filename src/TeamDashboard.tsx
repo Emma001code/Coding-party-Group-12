@@ -7,7 +7,9 @@ import MemberCard from './MemberCard'
 //Author: Yvette Muhoracyeye
 //Author: LeroY Carew
 
+// Task 41: Member Interface — shape of a complete team member object
 interface MemberData {
+  id: string;
   name: string;
   role: string;
   tasksCompleted: number;
@@ -16,9 +18,9 @@ interface MemberData {
 }
 
 const memberList: MemberData[] = [
-  { name: "Emmanuel Ngwoke", role: "Frontend Developer", tasksCompleted: 10, isActive: true, bio: "A member of the React TypeScript development team." },
-  { name: "Aziza Solace Afadhali", role: "UI Designer", tasksCompleted: 8, isActive: false },
-  { name: "Victor Akin-Oladiran", role: "Backend Developer", tasksCompleted: 7, isActive: true, bio: "A member working on component props and TypeScript." },
+  { id: "1", name: "Emmanuel Ngwoke", role: "Frontend Developer", tasksCompleted: 10, isActive: true, bio: "A member of the React TypeScript development team." },
+  { id: "2", name: "Aziza Solace Afadhali", role: "UI Designer", tasksCompleted: 8, isActive: false },
+  { id: "3", name: "Victor Akin-Oladiran", role: "Backend Developer", tasksCompleted: 7, isActive: true, bio: "A member working on component props and TypeScript." },
 ];
 
 function TeamDashboard() {
@@ -93,7 +95,7 @@ function TeamDashboard() {
       <div className="dashboard-grid">
         {memberList.map((member) => (
           <MemberCard
-            key={member.name}
+            key={member.id}
             name={member.name}
             role={member.role}
             tasksCompleted={member.tasksCompleted}
