@@ -27,3 +27,20 @@
 .highlight {
   color: #007BFF;
 }
+
+/* Task 26: Dynamic Classes — different class depending on active/inactive */
+.member-card--active {
+  border-left: 4px solid #2f9e44;
+}
+
+.member-card--inactive {
+  border-left: 4px solid #adb5bd;
+  opacity: 0.85;
+}
+
+/* Task 29: Responsive Design */
+@media (max-width: 480px) {
+  .member-card {
+    padding: 14px;
+  }
+}
