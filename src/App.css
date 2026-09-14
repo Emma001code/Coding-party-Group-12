@@ -3,3 +3,10 @@
   margin: 0 auto;
   padding: 2rem 1.5rem;
 }
+
+/* Task 30: Dashboard Layout — grid arranges multiple member cards responsively */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
