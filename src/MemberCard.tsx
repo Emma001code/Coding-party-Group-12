@@ -1,7 +1,7 @@
 import './MemberCard.css'
 //Author: Aziza solace afadhali
 //Author: Victor Akin-Oladiran
-// Yvette Muhoracyeye
+////Author: Yvette Muhoracyeye
 interface MemberCardProps {
   name: string
   role: string
@@ -18,6 +18,7 @@ function MemberCard({
   bio,
 }: MemberCardProps) {
   return (
+    //Author: Yvette Muhoracyeye
     <div className= "member-card">
       <h2 className= 'member-name highlight'>{name}</h2>
       <p className= 'member-role'>Role: {role}</p>
