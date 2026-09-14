@@ -17,13 +17,16 @@ interface MemberData {
   bio?: string;
 }
 
-const memberList: MemberData[] = [
+const initialMembers: MemberData[] = [
   { id: "1", name: "Emmanuel Ngwoke", role: "Frontend Developer", tasksCompleted: 10, isActive: true, bio: "A member of the React TypeScript development team." },
   { id: "2", name: "Aziza Solace Afadhali", role: "UI Designer", tasksCompleted: 8, isActive: false },
   { id: "3", name: "Victor Akin-Oladiran", role: "Backend Developer", tasksCompleted: 7, isActive: true, bio: "A member working on component props and TypeScript." },
 ];
 
 function TeamDashboard() {
+  // Task 42: Array State (Typed) — members live in useState so the list can change later
+  const [members] = useState<MemberData[]>(initialMembers);
+
   // Task 31: useState Hook (Typed) — numeric teamScore
   const [teamScore, setTeamScore] = useState<number>(0);
 
@@ -93,7 +96,7 @@ function TeamDashboard() {
 
       {/* Task 30: Dashboard Layout — grid container for the member cards */}
       <div className="dashboard-grid">
-        {memberList.map((member) => (
+        {members.map((member) => (
           <MemberCard
             key={member.id}
             name={member.name}
