@@ -1,5 +1,13 @@
+import MemberCard from './MemberCard'
+
 function TeamDashboard() {
-  return null
+  return (
+    <>
+    <h1>Team Dashboard</h1>
+    <p>we are breakout room 12 working on react typescript tasks as team</p>
+    <MemberCard />
+    </>
+  )
 }
 
 export default TeamDashboard
