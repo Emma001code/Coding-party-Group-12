@@ -25,7 +25,7 @@ const initialMembers: MemberData[] = [
 
 function TeamDashboard() {
   // Task 42: Array State (Typed) — members live in useState so the list can change later
-  const [members] = useState<MemberData[]>(initialMembers);
+  const [members, setMembers] = useState<MemberData[]>(initialMembers);
 
   // Task 31: useState Hook (Typed) — numeric teamScore
   const [teamScore, setTeamScore] = useState<number>(0);
@@ -51,7 +51,7 @@ function TeamDashboard() {
     setNewMemberName(event.target.value);
   }
 
-  // Task 39 & 40: Form Submission (Typed), preventDefault, use the input value
+  // Task 39, 40 & 43: typed submit, preventDefault, add a new member object to state
   function handleAddMemberSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -59,6 +59,17 @@ function TeamDashboard() {
     if (trimmedName === '') {
       return;
     }
+
+    const newMember: MemberData = {
+      id: crypto.randomUUID(),
+      name: trimmedName,
+      role: 'Team Member',
+      tasksCompleted: 0,
+      isActive: true,
+    };
+
+    // Task 43: Add Member — append the new object without mutating the old array
+    setMembers((currentMembers) => [...currentMembers, newMember]);
 
     console.log('Submitted member name:', trimmedName);
     setLastSubmittedName(trimmedName);
@@ -95,6 +106,7 @@ function TeamDashboard() {
       {lastSubmittedName && <p>Last submitted member name: {lastSubmittedName}</p>}
 
       {/* Task 30: Dashboard Layout — grid container for the member cards */}
+      {/* Task 44: Render Updated State — mapping members state shows new cards automatically */}
       <div className="dashboard-grid">
         {members.map((member) => (
           <MemberCard
