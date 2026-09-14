@@ -1,7 +1,7 @@
 import './MemberCard.css'
 //Author: Aziza solace afadhali
 //Author: Victor Akin-Oladiran
-////Author: Yvette Muhoracyeye
+//Author: Yvette Muhoracyeye
 interface MemberCardProps {
   name: string
   role: string
