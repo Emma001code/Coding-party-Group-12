@@ -1,6 +1,8 @@
 import './App.css'
 import TeamDashboard from './TeamDashboard'
 
+//Author: Emmanuel Ngwoke
+
 function App() {
   return (
     <main className="app">

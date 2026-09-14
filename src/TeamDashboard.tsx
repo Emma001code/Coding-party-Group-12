@@ -16,9 +16,9 @@ interface MemberData {
 }
 
 const memberList: MemberData[] = [
-  { name: "Emmanuel Ngwoke", role: "Team Member", tasksCompleted: 10, isActive: true, bio: "A member of the React TypeScript development team." },
-  { name: "Aziza Solace Afadhali", role: "Team Member", tasksCompleted: 8, isActive: false },
-  { name: "Victor Akin-Oladiran", role: "Team Member", tasksCompleted: 7, isActive: true, bio: "A member working on component props and TypeScript." },
+  { name: "Emmanuel Ngwoke", role: "Frontend Developer", tasksCompleted: 10, isActive: true, bio: "A member of the React TypeScript development team." },
+  { name: "Aziza Solace Afadhali", role: "UI Designer", tasksCompleted: 8, isActive: false },
+  { name: "Victor Akin-Oladiran", role: "Backend Developer", tasksCompleted: 7, isActive: true, bio: "A member working on component props and TypeScript." },
 ];
 
 function TeamDashboard() {
