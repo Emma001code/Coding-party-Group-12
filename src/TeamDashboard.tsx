@@ -1,5 +1,7 @@
+
 import MemberCard from './MemberCard'
 
+//Author: Emmanuel Ngwoke
 function TeamDashboard() {
   return (
     <>
