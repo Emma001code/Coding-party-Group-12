@@ -1,7 +1,7 @@
 import './App.css'
 import TeamDashboard from './TeamDashboard'
 
-//Author: Emmanuel Ngwoke
+// Author: Emmanuel Ngwoke
 
 function App() {
   return (

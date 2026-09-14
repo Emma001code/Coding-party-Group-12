@@ -2,10 +2,11 @@ import { useState } from 'react'
 import type { ChangeEvent, FormEvent } from 'react'
 import MemberCard from './MemberCard'
 
-//Author: Emmanuel Ngwoke
-//Author: Victor Akin-Oladiran
-//Author: Yvette Muhoracyeye
-//Author: LeroY Carew
+// Author: Emmanuel Ngwoke
+// Author: Aziza Solace Afadhali
+// Author: Victor Akin-Oladiran
+// Author: Yvette Muhoracyeye
+// Author: LeroY Carew
 
 // Task 41: Member Interface
 interface MemberData {

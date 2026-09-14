@@ -1,10 +1,10 @@
 import type { CSSProperties } from 'react'
 import './MemberCard.css'
 
-//Author: Aziza solace afadhali
-//Author: Victor Akin-Oladiran
-// Yvette Muhoracyeye
-//Author: LeroY Carew
+// Author: Aziza Solace Afadhali
+// Author: Victor Akin-Oladiran
+// Author: Yvette Muhoracyeye
+// Author: LeroY Carew
 
 interface MemberCardProps {
   name: string
