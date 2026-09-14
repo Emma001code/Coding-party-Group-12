@@ -1,6 +1,7 @@
+import './MemberCard.css'
 //Author: Aziza solace afadhali
 //Author: Victor Akin-Oladiran
-
+// Yvette Muhoracyeye
 interface MemberCardProps {
   name: string
   role: string
@@ -12,18 +13,18 @@ interface MemberCardProps {
 function MemberCard({
   name,
   role,
-  tasksCompleted,
+  tasksCompleted = 0,
   isActive,
   bio,
 }: MemberCardProps) {
   return (
-    <>
-      <h2>{name}</h2>
-      <p>Role: {role}</p>
-      <p>Tasks Completed: {tasksCompleted}</p>
-      <p>Status: {isActive ? 'Active' : 'Inactive'}</p>
-      {bio && <p>Bio: {bio}</p>}
-    </>
+    <div className= "member-card">
+      <h2 className= 'member-name highlight'>{name}</h2>
+      <p className= 'member-role'>Role: {role}</p>
+      <p className= 'member-tasks'>Tasks Completed: {tasksCompleted}</p>
+      <p className= 'member-status'>Status: {isActive ? 'Active' : 'Inactive'}</p>
+      {bio && <p className= 'member-bio'>Bio: {bio}</p>}
+    </div>
   )
 }
 
