@@ -1,0 +1,29 @@
+.member-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 16px;
+}
+
+.member-name {
+  font-size: 20px;
+  color: #222;
+}
+
+.member-role {
+  color: #555;
+  font-style: italic;
+}
+
+.member-tasks {
+  font-size: 14px;
+}
+
+.member-status {
+  font-weight: bold;
+}
+
+.highlight {
+  color: #007BFF;
+}
